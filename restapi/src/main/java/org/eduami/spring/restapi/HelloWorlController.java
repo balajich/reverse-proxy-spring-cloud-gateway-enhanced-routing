@@ -16,6 +16,7 @@ public class HelloWorlController {
 
     @GetMapping("/ping")
     public String ping() {
+        System.out.println("Health Check Called");
         return "i am ok from: "+serverPort;
     }
 }
